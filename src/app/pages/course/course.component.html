@@ -1,20 +1,23 @@
-<div class="course-form">
+<div class="course">
   <h1>Prepare your Angular RoadMap </h1>
-  <kendo-label text="To Learn ?">
-    <kendo-dropdownlist
-      [(ngModel)]="selectedCourse"
-      [data]="courseList"
-      id="courses"
-      textField="title"
-      valueField="description"
-    >
-    </kendo-dropdownlist>
-  </kendo-label>
-  <kendo-label text="When ?">
-    <kendo-datetimepicker
-      [(value)]="selectedDate"
-      [format]="dateTimeFormat"
-    ></kendo-datetimepicker>
-  </kendo-label>
+  <div class="course-form">
+    <kendo-label text="To Learn ?">
+      <kendo-dropdownlist
+        [(ngModel)]="selectedCourse"
+        [data]="courseList"
+        id="courses"
+        textField="title"
+        valueField="description"
+      >
+      </kendo-dropdownlist>
+    </kendo-label>
+    <kendo-label text="When ?">
+      <kendo-datetimepicker
+        [(value)]="selectedDate"
+        [format]="dateTimeFormat"
+      ></kendo-datetimepicker>
+    </kendo-label>
+  </div>
+
   <button (click)="addToCalendar()" kendoButton>Book it!</button>
 </div>
