@@ -1,8 +1,17 @@
-<kendo-scheduler [kendoSchedulerBinding]="courses">
-  <kendo-scheduler-day-view>
-  </kendo-scheduler-day-view>
+@if (hasCourses) {
+  <h2>You have {{ courses.length }} pending!</h2>
+} @else {
+  <h2>Hey, you have an empty agenda!</h2>
+}
 
-  <kendo-scheduler-week-view>
-  </kendo-scheduler-week-view>
-  <kendo-scheduler-month-view></kendo-scheduler-month-view>
-</kendo-scheduler>
+@defer (when hasCourses) {
+  <kendo-scheduler [editable]="true" [kendoSchedulerBinding]="courses">
+    <kendo-scheduler-day-view>
+    </kendo-scheduler-day-view>
+
+    <kendo-scheduler-week-view>
+    </kendo-scheduler-week-view>
+    <kendo-scheduler-month-view></kendo-scheduler-month-view>
+  </kendo-scheduler>
+}
+

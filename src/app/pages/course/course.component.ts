@@ -1,12 +1,12 @@
-import { Component, EventEmitter, inject, Output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { DropDownListModule } from '@progress/kendo-angular-dropdowns';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { LabelModule } from '@progress/kendo-angular-label';
 import { BookedCourse, Course } from '../entites/course';
-import { FormsModule } from '@angular/forms';
 import { ButtonModule } from '@progress/kendo-angular-buttons';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-course',
@@ -16,8 +16,8 @@ import { ButtonModule } from '@progress/kendo-angular-buttons';
     DateInputsModule,
     DropDownListModule,
     LabelModule,
-    FormsModule,
     ButtonModule,
+    FormsModule,
   ],
   templateUrl: './course.component.html',
   styleUrl: './course.component.scss',

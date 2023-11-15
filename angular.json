@@ -21,8 +21,7 @@
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
-              "zone.js",
-
+              "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
@@ -33,7 +32,6 @@
             "styles": [
               "src/styles.scss",
               "node_modules/@progress/kendo-theme-default/dist/all.css"
-
             ],
             "scripts": [],
             "server": "src/main.server.ts",

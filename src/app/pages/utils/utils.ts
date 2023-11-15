@@ -5,9 +5,9 @@ export function calculateCourseEndTime(
   courseDate: Date,
   duration: number,
 ): Date {
-  let newEndTime = new Date(courseDate.getTime());
-  newEndTime.setHours(newEndTime.getHours() + duration);
-  return newEndTime;
+  let courseEndTime = new Date(courseDate.getTime());
+  courseEndTime.setHours(courseEndTime.getHours() + duration);
+  return courseEndTime;
 }
 
 export function mapCoursesToSchedulerEvents(
