@@ -1,10 +1,4 @@
-import {
-  Component,
-  inject,
-  Input,
-  OnChanges,
-  SimpleChanges,
-} from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   MonthViewModule,
@@ -20,12 +14,7 @@ import { mapCoursesToSchedulerEvents } from '../utils/utils';
   templateUrl: './courses-calendar.component.html',
   styleUrl: './courses-calendar.component.scss',
 })
-export class CoursesCalendarComponent implements OnChanges {
+export class CoursesCalendarComponent {
   @Input({ transform: mapCoursesToSchedulerEvents }) courses: BookedCourse[] =
     [];
-  public hasCourses = false;
-
-  ngOnChanges(changes: SimpleChanges): void {
-    this.hasCourses = changes['courses'].currentValue.length > 0;
-  }
 }

@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { SchedulerModule } from '@progress/kendo-angular-scheduler';
@@ -25,7 +25,6 @@ import { LayoutModule } from '@progress/kendo-angular-layout';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'learning-app';
   bookedCourses: BookedCourse[] = [];
 
   addBookedCourse(course: BookedCourse) {

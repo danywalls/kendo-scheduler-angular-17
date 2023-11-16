@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { DropDownListModule } from '@progress/kendo-angular-dropdowns';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { LabelModule } from '@progress/kendo-angular-label';
-import { BookedCourse, Course } from '../entites/course';
+import { ANGULAR_V17_FEATURES, BookedCourse } from '../entites/course';
 import { ButtonModule } from '@progress/kendo-angular-buttons';
 import { FormsModule } from '@angular/forms';
 
@@ -24,28 +24,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class CourseComponent {
   @Output() addCourse = new EventEmitter<BookedCourse>();
-  courseList: Array<Course> = [
-    {
-      title: 'New Control Flow',
-      description: 'New Control Flow Sintax @for and more',
-      duration: 2,
-    },
-    {
-      title: 'Deffered Views',
-      description: 'Deffered Views',
-      duration: 6,
-    },
-    {
-      title: 'Hydration',
-      description: 'Hydration',
-      duration: 4,
-    },
-    {
-      title: 'SSR',
-      description: 'SSR',
-      duration: 8,
-    },
-  ];
+  courseList = ANGULAR_V17_FEATURES;
 
   public selectedDate: Date = new Date();
   public selectedCourse = this.courseList[0];
