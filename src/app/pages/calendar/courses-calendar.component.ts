@@ -4,7 +4,7 @@ import {
   MonthViewModule,
   SchedulerModule,
 } from '@progress/kendo-angular-scheduler';
-import { BookedCourse } from '../entites/course';
+import { BookedCourse } from '../entities/course';
 import { mapCoursesToSchedulerEvents } from '../utils/utils';
 
 @Component({

@@ -1,4 +1,4 @@
-import { BookedCourse } from '../entites/course';
+import { BookedCourse } from '../entities/course';
 import { SchedulerEvent } from '@progress/kendo-angular-scheduler';
 
 export function calculateCourseEndTime(

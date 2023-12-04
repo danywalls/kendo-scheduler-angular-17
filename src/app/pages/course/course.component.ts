@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { DropDownListModule } from '@progress/kendo-angular-dropdowns';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { LabelModule } from '@progress/kendo-angular-label';
-import { ANGULAR_V17_FEATURES, BookedCourse } from '../entites/course';
+import { ANGULAR_V17_FEATURES, BookedCourse } from '../entities/course';
 import { ButtonModule } from '@progress/kendo-angular-buttons';
 import { FormsModule } from '@angular/forms';
 

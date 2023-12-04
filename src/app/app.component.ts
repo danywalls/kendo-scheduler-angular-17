@@ -5,7 +5,7 @@ import { SchedulerModule } from '@progress/kendo-angular-scheduler';
 
 import { CoursesCalendarComponent } from './pages/calendar/courses-calendar.component';
 import { CourseComponent } from './pages/course/course.component';
-import { BookedCourse } from './pages/entites/course';
+import { BookedCourse } from './pages/entities/course';
 import { FormsModule } from '@angular/forms';
 import { LayoutModule } from '@progress/kendo-angular-layout';
 
